@@ -1,0 +1,34 @@
+Assumption: The cron job is written in NodeJS
+
+1. Open this link, keep it ready. https://cloud.google.com/appengine/docs/standard/nodejs/quickstart
+
+2. Open this link, go through the instructions to set Google Cloud platform on your computer. This create a command line interface for you to interact with stuff that you create on the Cloud.
+
+3. At the step where the Google Cloud cli asks you if you want to create a new project, cancel the process using CTRL + C. This step should be done via the link in point 1 above.
+
+4. Follow the instructions in the first step, starting from step 2 (gclouds projects create).
+
+5. Choose asia-south1 as the region for setting up the cron job, as this is close to India, and it's one the locations that Google supports for creating cron jobs.
+
+6. Make sure you enable billing by adding your credit card details.
+
+7. Next, open this link to set up the Cloud Scheduler. https://cloud.google.com/scheduler/docs/setup. Follow the instructions.
+
+8. Note that 'Enable Billing For Your Project' is already done.
+
+9. Enable the Cloud Scheduler API.
+
+10. After enabling, click the 'Add Credentials' button.
+
+11. Select Cloud Scheduler API from the list of choices of API.
+
+12. Select 'Yes, Im using one or both'.
+
+13. Save this link for later reference. It tells you how to create a job. https://developers.google.com/apis-explorer/?hl=en_US#p/cloudscheduler/v1/
+
+14. Go back to this link https://cloud.google.com/appengine/docs/standard/nodejs/quickstart and learn how to create a sample node app. Deploy to the Google Cloud using the given instructions. Use this sample Hellow World project as a base to create your own project which you want to run regularly with a cron job.
+
+15. Open this link to learn more about creating a web service with NodeJS that can be deployed on the cloud. https://cloud.google.com/appengine/docs/standard/nodejs/building-app/writing-web-service
+
+
+16. Once you've created a web service, you can deploy it on the cloud by typing 'gcloud app deploy'.
